@@ -31,7 +31,7 @@ xp = 1j * w * X * np.exp(1j * w * t)
 xp = np.imag(xp) * 100      # Velocidade [cm/s]
 xpp = -w**2 * X * np.exp(1j * w * t)
 xpp = np.imag(xpp)          # Aceleração [m/s^2]
-Fi = m * xpp                # Força interna [N]
+Fi = m * xpp / 10           # Força interna [dN]
 
 plt.figure(1)
 
@@ -42,7 +42,7 @@ plt.ylabel('')
 plt.plot(t, x, 'r', label='x [m]')
 plt.plot(t, xp, 'b', label='v [m/s]')
 plt.plot(t, xpp, 'g', label='a [m/s^2]')
-plt.plot(t, Fi, 'm', label='Fi [N]')
+plt.plot(t, Fi, 'm', label='Fi [dN]')
 
 plt.legend(bbox_to_anchor=(1, 1))
 plt.grid()

@@ -13,7 +13,6 @@ Created on Mon Mar 21 07:12:48 2022
 """
 
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 
 # Leitura dos dados experimentais
